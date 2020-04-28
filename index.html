@@ -119,7 +119,7 @@
             height: 0;
             width: 100%;
             overflow: hidden;
-            transition: .25s ease;
+            transition: .2s ease;
             background-color: rgb(0, 167, 28);
             opacity: 0.75;
         }
@@ -199,7 +199,7 @@
             <Header>
                 <h2 style="LINE-HEIGHT:10px;">Johan Hallberg</h2>
                 <h3 style="LINE-HEIGHT:5px;">Programmer</h3>
-                <p style="color:gray;">Hello, I'm Johan Hallberg. I am a programmer, primarily expericed with C#.</p>
+                <p style="color:gray;">Hello, I'm Johan Hallberg. I am a programmer, primarily expericed with C#. This site is a work in progress</p>
             </Header>
         </div>
         
@@ -218,7 +218,7 @@
                 <div class="container">
                     <img src="Images/E_Building_at_University_of_Skövde.JPG" alt="Avatar" class="image2">
                     <div class="overlay">
-                        <div id="projectButton" class="menuButton"></div>
+                        <div id="educationButton" class="menuButton"></div>
                         <div class="textCenter"> Education</div>
                     </div>
                 </div>
@@ -287,25 +287,32 @@
                  </div>
                 <div class="projectLine"></div>
             </div>
-
-            <div style="height: 100px;"></div>
         </div>
+
+        <div id = "myEducation" class="InfoDiv">
+            
+        </div>
+
+        <div style="height: 100px;"></div>
+
     </div>   
 
     <script>
         
-        document.getElementById("projectButton").onclick = function() {fade(document.getElementById("myProjects"))};
+        document.getElementById("projectButton").onclick = function() {fade(document.getElementById("myProjects"), document.getElementById("myEducation"))};
+        document.getElementById("educationButton").onclick = function() {fade(document.getElementById("myEducation"), document.getElementById("myProjects"))};
 
-        function fade(element) {
+        function fade(element1, element2) {
+            element2.style.display = 'none';
             var op = 0;  // initial opacity
             var timer = setInterval(function () {
             if (op >= 0.99){
                     clearInterval(timer);
-                    element.style.display = 'block';
+                    element1.style.display = 'block';
             }
-            element.style.opacity = op;
-            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-            element.style.display = 'block';
+            element1.style.opacity = op;
+            element1.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            element1.style.display = 'block';
             op += op + 0.05;
             }, 50);
         }
