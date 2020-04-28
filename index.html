@@ -18,7 +18,7 @@
             padding-left: 10%;
             padding-top: 5%;
             text-align: left;
-            font-size:2vw;
+            font-size:30px;
             color: black;
         }
 
@@ -27,6 +27,8 @@
             width: 25%;
             height: auto;
             border-radius: 50%;
+            margin-right: 25px;
+            margin-top: 25px;
         }
 
         .colum{
@@ -48,7 +50,8 @@
 
         .box{
             box-sizing: border-box;
-	        width:80%;
+	        width: 1536px;
+            height: max-content;
             margin-left: 10%;
             margin-bottom: 5%;
             box-shadow: 10px 10px 10px black;
@@ -56,7 +59,7 @@
 
         .projectLine{
             width: 100%;
-            height: 1%;
+            height: 5px;
             background: black;
         }
 
@@ -92,9 +95,9 @@
 
         .image3{
             float: left;
-            display: flex;
+            display: block;
             position: relative;
-            height:90%;
+            height:75%;
             width:auto;
         }
 
@@ -159,7 +162,7 @@
         .textLeft
         {
             color: black;
-            font-size: 1.5vw;
+            font-size: 25px;
             position: relative;
             text-align: left;
             margin: auto;
@@ -179,10 +182,11 @@
 
         .centerBox{
             margin: 0;
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: inline-block;
         }
 
     </style>
@@ -195,7 +199,7 @@
             <Header>
                 <h2 style="LINE-HEIGHT:10px;">Johan Hallberg</h2>
                 <h3 style="LINE-HEIGHT:5px;">Programmer</h3>
-                <p style="color:gray;">Hello, I'm Johan Hallberg. I am a programmer, primarily with experice with C#.</p>
+                <p style="color:gray;">Hello, I'm Johan Hallberg. I am a programmer, primarily expericed with C#.</p>
             </Header>
         </div>
         
@@ -224,11 +228,11 @@
         <div id = "myProjects" class="InfoDiv">
             <div id="Hang In There">                
                 <div class="projectLine"></div>
-                <div style="height: 40%;">
+                <div style="height: 400px;">
                     <div class="centerBox">
-                        <img src="Images/Hang In There.JPG" alt="Hang In There.gif" style="margin-top: -3.25%;" class="image3">
-                        <h2 style="padding-left: 28%;" class="textLeft">Hang In There</h2>
-                        <p style="padding-top: 1%; padding-left: 28%;" class="textLeft">Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. </p>                        
+                        <img src="Images/Hang In There.JPG" alt="Hang In There.gif" style="vertical-align: middle;" class="image3">
+                        <h2 style="padding-left: 24%; margin-top: 4.5%;" class="textLeft">Hang In There</h2>
+                        <p style="padding-top: 1%; padding-left: 24%; vertical-align: middle;" class="textLeft">Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. Hang In There is a combination of a tower defence game and a thrid person shooter set in space. </p>                        
                     </div>
                 </div>
                 <div class="projectLine"></div>
@@ -236,12 +240,12 @@
 
             <div id="Uppfinnaren" class="DivSpace">
                 <div class="projectLine"></div>
-                    <div style="height: 40%;">
+                    <div style="height: 400px;;">
                         <div class="centerBox">
-                        <img src="Images/uppfinnaren.gif" alt="Uppfinnaren.gif" style="margin-top: -2%;" class="image3">
-                        <h2 style="padding-left: 40%;" class="textLeft "><a href="https://kroax.itch.io/uppfinnaren">Uppfinnaren</a></h2>
-                        <h3 style="padding-left: 40%;" class="textLeft ">Silvertejp Entertainment</h3>
-                        <p style="padding-top: 1%; padding-left: 40%;" class="textLeft ">Uppfinnaren is a point and click puzzle game. The player controls one of three characters, each with their own abilities. The player needs to switch between the characters to solve the puzzles and progress in the game. The game has a heavy focus on story and takes about 40 min to complete.</p>
+                        <img src="Images/uppfinnaren.gif" alt="Uppfinnaren.gif" class="image3">
+                        <h2 style="padding-left: 35%; margin-top: 4.5%;" class="textLeft "><a href="https://kroax.itch.io/uppfinnaren">Uppfinnaren</a></h2>
+                        <h3 style="padding-left: 35%;" class="textLeft ">Silvertejp Entertainment</h3>
+                        <p style="padding-top: 1%; padding-left: 35%;" class="textLeft ">Uppfinnaren is a point and click puzzle game. The player controls one of three characters, each with their own abilities. The player needs to switch between the characters to solve the puzzles and progress in the game. The game has a heavy focus on story and takes about 40 min to complete.</p>
                         </div>
                     </div>
                 <div class="projectLine"></div>
@@ -249,23 +253,23 @@
 
             <div id="Re:Surge" class="DivSpace" >
                 <div class="projectLine"></div>
-                <div style="height: 40%;">
+                <div style="height: 400px;">
                     <div class="centerBox">
                 <img src="Images/ReSurge.gif" alt="ReSurge.gif" class="image3">
-                <h2 style="LINE-HEIGHT:50%;" class="textLeft ">Re:Surge</h2>
-                <h3 style="LINE-HEIGHT:175%;" class="textLeft "> <a href="https://www.facebook.com/resurgethegame">Thunderpunch Entertainment</a></h3>
-                <p class="textLeft ">Re:Surge is an areana shooter reminicent of games such as Quake and Doom. The game is entierly competetive multiplayer, using the Forge Networking framework.</p>
+                <h2 style="padding-left: 40%; margin-top: 4.5%;" class="textLeft ">Re:Surge</h2>
+                <h3 style="padding-left: 40%;" class="textLeft "> <a href="https://www.facebook.com/resurgethegame">Thunderpunch Entertainment</a></h3>
+                <p style="padding-left: 40%; padding-top: 1%;" class="textLeft ">Re:Surge is an areana shooter reminicent of games such as Quake and Doom. The game is entierly competetive multiplayer, using the Forge Networking framework.</p>
             </div>
         </div>
     <div class="projectLine"></div>
             </div>
             <div id="NEAT" class="DivSpace">
                 <div class="projectLine"></div>
-                <div style="height: 40%;">
+                <div style="height: 400px;">
                     <div class="centerBox">
                 <img src="Images/NEAT.gif" alt="NEAT.gif" class="image3">
-                <h2 style="LINE-HEIGHT:175%;" class="textLeft ">A NEAT Project</h2>
-                <p class="textLeft ">This is a project which implemented NEAT to learn how to play Super Mario. Input to the neural network was accomplished by a grid that 'visualized' the screen, each box in the grid corresponded to an input node.</p>
+                <h2 style="padding-left: 42%; margin-top: 4.5%;" class="textLeft ">A NEAT Project</h2>
+                <p style="padding-left: 42%; padding-top: 1%;" class="textLeft ">This is a project which implemented NEAT to learn how to play Super Mario. Input to the neural network was accomplished by a grid that 'visualized' the screen, each box in the grid corresponded to an input node.</p>
             </div>
         </div>
     <div class="projectLine"></div>
@@ -273,16 +277,18 @@
 
             <div id="Thesis" class="DivSpace">
                 <div class="projectLine"></div>
-                <div style="height: 40%;">
+                <div style="height: 400px;">
                     <div class="centerBox">
                 <img src="Images/Thesis.gif" alt="Thesis.gif" class="image3">
-                <h2 style="LINE-HEIGHT:100%;" class="textLeft ">Thesis</h2>
-                <h3 class="textLeft ">Recreate human behaviour with artificial intelligence in 2D top down wave shooter game</h3>
-                <p class="textLeft ">This is a project which implemented NEAT to learn how to play Super Mario. Input to the neural network was accomplished by a grid that 'visualized' the screen, each box in the grid corresponded to an input node.</p>
+                <h2 style="padding-left: 31%; margin-top: 4.5%;" class="textLeft ">Thesis</h2>
+                <h3 style="padding-left: 31%;" class="textLeft ">Recreate human behaviour with artificial intelligence in 2D top down wave shooter game</h3>
+                <p style="padding-left: 31%; padding-top: 1%;" class="textLeft ">This is a project which implemented NEAT to learn how to play Super Mario. Input to the neural network was accomplished by a grid that 'visualized' the screen, each box in the grid corresponded to an input node.</p>
+                 </div>
+                 </div>
+                <div class="projectLine"></div>
             </div>
-        </div>
-    <div class="projectLine"></div>
-            </div>
+
+            <div style="height: 100px;"></div>
         </div>
     </div>   
 
