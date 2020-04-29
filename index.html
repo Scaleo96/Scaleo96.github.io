@@ -27,8 +27,8 @@
             width: 25%;
             height: auto;
             border-radius: 50%;
-            margin-right: 25px;
-            margin-top: 25px;
+            margin-right: 50px;
+            margin-top: 50px;
         }
 
         .colum{
@@ -44,8 +44,30 @@
             justify-content: center;
         }
 
-        .round{
-            display: round;
+        .half-circle {
+            position: absolute;
+            width: 420px;
+            height: 200px;
+            border-bottom-left-radius: 660px;
+            border: 10px solid rgb(0, 167, 28);
+            border-top: 0;
+        }
+
+        .quater-circle {
+            position: absolute;
+            width: 210px;
+            height: 200px;
+            border-bottom-left-radius: 660px;
+            border: 5px solid rgb(0, 167, 28);
+            border-top: 0;
+            border-right: 0;
+        }
+
+        .imageBox{
+            position: absolute;
+            width: 10px;
+            height: 200px;
+            background-color: rgb(0, 167, 28);
         }
 
         .box{
@@ -53,7 +75,8 @@
 	        width: 1536px;
             height: max-content;
             margin-left: 10%;
-            margin-bottom: 5%;
+            margin-top: 50px;
+            margin-bottom: 50px;
             box-shadow: 0px 0px 50px black;
         }
 
@@ -195,6 +218,9 @@
     <div class="box mainBoxColor">
         
         <div>
+            <div style="margin-left: 1085px; margin-top: 250px;" class="half-circle"></div>
+            <div style="margin-left: 1065px; margin-top: 270px;" class="quater-circle"></div>
+            <div style="margin-left: 1495px; margin-top: 50px;" class="imageBox"></div>
             <img src="Images/IMG_0655.JPG" width="240" height="240" class="image1 rotate270">
             <Header>
                 <h2 style="LINE-HEIGHT:10px;">Johan Hallberg</h2>
@@ -216,7 +242,7 @@
     
             <div class="colum">
                 <div class="container">
-                    <img src="Images/Skovde.JPG" alt="Education.JPG" class="image2">
+                    <img src="Images/Skovde.jpg" alt="Education.JPG" class="image2">
                     <div class="overlay">
                         <div id="educationButton" class="menuButton"></div>
                         <div class="textCenter"> Education</div>
@@ -280,7 +306,7 @@
                 <div style="height: 400px;">
                     <div class="centerBox">
                 <img src="Images/Thesis.gif" alt="Thesis.gif" class="image3">
-                <h2 style="padding-left: 31%; margin-top: 0.5%;" class="textLeft ">Thesis</h2>
+                <h2 style="padding-left: 31%;" class="textLeft ">Thesis</h2>
                 <h3 style="padding-left: 31%;" class="textLeft ">Recreate human behaviour with artificial intelligence in a 2D top down wave shooter game</h3>
                 <p style="padding-left: 31%; padding-top: 1%;" class="textLeft ">Two different AI were made to play a game with as humanlike behaviour as possible. One AI made with Behaviour trees and one with a LSTM neural network trained with reinforcement learning. When they were ready testers played with both AI one after another, except that the testers were told that one of the agents were an AI and one were a human. The tester was not told which were which and they had to decide which they thought were the AI. The goal of this was to find out which of the two used techniques were best at imitating human player behaviour.</p>
                  </div>
@@ -294,7 +320,7 @@
                 <div class="projectLine"></div>
                 <div style="height: 400px;">
                     <div class="centerBox">
-                        <img src="Images/HIS_SE_LOGO_WEB.PNG" alt="HIS_LOGO.PNG" class="image3">
+                        <img src="Images/HIS_SE_LOGO_WEB.png" alt="HIS_LOGO.PNG" class="image3">
                         <h2 style="padding-left: 25%; margin-top: 3%;" class="textLeft ">University of Skövde</h2>
                         <h3 style="padding-left: 25%;" class="textLeft ">Game Development - Programming</h3>
                         <p style="padding-left: 25%; padding-top: 1%;" class="textLeft ">The programme taught programming, mostly with C# but also C++, Java and Assembly. It focused on game programming but mostly taught general programming. Courses included: Data Communications, Algorithms och data structures, Parallel processes, Operating Systems, Machine-related programming, Programming Methodology, Linear Algebra and Discrete Mathematics.</p>
@@ -307,7 +333,7 @@
                 <div class="projectLine"></div>
                 <div style="height: 400px;">
                     <div class="centerBox">
-                        <img src="Images/lbs.JPG" alt="lbsLogo.JPG" class="image3">
+                        <img src="Images/lbs.jpg" alt="lbsLogo.JPG" class="image3">
                         <h2 style="padding-left: 25%; margin-top: 4.5%;" class="textLeft ">Ljud och Bild Skolan</h2>
                         <h3 style="padding-left: 25%;" class="textLeft ">Game Development</h3>
                         <p style="padding-left: 25%; padding-top: 1%;" class="textLeft ">This programme focused on programming for games programming but it also included design and aesthetics with focus on game development. It had courses that taught 3D modeling and how to use programms such as Photoshop, Maya and Mudbox.</p>
