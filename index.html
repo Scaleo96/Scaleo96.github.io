@@ -1,442 +1,444 @@
+<!doctype html>
 <html lang="en">
+
 <head>
-<title>Johan Hallberg's Portfolio</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color:rgb(0, 231, 39);
-        }
-
-        header{
-            width: 100%;
-            padding-left: 2.5%;
-            padding-top: 5%;
-            text-align: left;
-            font-size:30px;
-            color: black;
-        }
-
-        footer{
-            height: 350px;
-            padding-top: 25px;
-            padding-left: 100px;
-            background-color: rgb(65, 65, 65);
-            color: white;
-        }
-
-        .image1{
-            float: right;
-            width: 25%;
-            height: auto;
-            border-radius: 50%;
-            margin-right: 50px;
-            margin-top: 50px;
-        }
-
-        .colum{
-            width: 45%;
-            height: auto;
-            margin-left: 1%;
-            margin-right: 1%;
-        }
-
-        .row {
-            margin-top: 0%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .half-circle {
-            position: absolute;
-            width: 420px;
-            height: 200px;
-            border-bottom-left-radius: 660px;
-            border: 10px solid rgb(0, 231, 39);
-            border-top: 0;
-        }
-
-        .quater-circle {
-            position: absolute;
-            width: 210px;
-            height: 200px;
-            border-bottom-left-radius: 660px;
-            border: 5px solid rgb(0, 231, 39);
-            border-top: 0;
-            border-right: 0;
-        }
-
-        .filled-quater-circle {
-            position: absolute;
-            width: 210px;
-            height: 200px;
-            border-bottom-right-radius: 690px;
-            background-color: rgb(0, 231, 39);
-            border: 5px solid rgb(0, 231, 39);
-            border-top: 0;
-            border-left: 0;
-        }
-
-        .imageBox{
-            position: absolute;
-            width: 10px;
-            height: 200px;
-            background-color: rgb(0, 231, 39);
-        }
-
-        .box{
-            box-sizing: border-box;
-	        width: 1536px;
-            height: max-content;
-            margin-left: 192px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            box-shadow: 0px 0px 50px black;
-        }
-
-        .projectLine{
-            width: 101%;
-            height: 5px;
-            background: black;
-        }
-
-        .projectsParent{
-            height: 40%;
-        }
- 
-        .mainBoxColor{
-	        background:#ffffff;
-        }
-
-        .rotate270{
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-            -o-transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            transform: rotate(270deg);
-        }
-
-        .container {
-            position: relative;
-            width:100%;
-            height: auto;
-            margin-left: 0;
-            margin-top: 25%;
-        }
-
-        .image2 {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .image3{
-            float: left;
-            display: block;
-            position: relative;
-            height:75%;
-            width:auto;
-        }
-
-        .Margin-2{
-            margin-top: -1%;
-        }
-
-        
-        .Margin-3{
-            margin-top: -1%;
-        }
-
-        .overlay {
-            position:absolute;
-            top: 0;
-            bottom: 100%;
-            left: 0;
-            right: 0;
-            height: 0;
-            width: 100%;
-            overflow: hidden;
-            transition: .2s ease;
-            background-color: rgb(0, 231, 39);
-            opacity: 0.75;
-        }
-
-        .container:hover .overlay {
-            bottom: 0;
-            height: 100%;
-        }
-
-        .menuButton{
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        .InfoDiv{
-            left: 5%;
-            -webkit-transform: translate(5%, 0%);
-            -ms-transform: translate(5%, 0%);
-            transform: translate(5%, 0%);
-            text-align: center;
-            width: 90%;
-            margin-top: 2%;
-            display:  block;
-        }
-
-        .textCenter {
-            color: white;
-            font-size: 4vw;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .textLeft
-        {
-            color: black;
-            font-size: 25px;
-            position: relative;
-            text-align: left;
-            margin: auto;
-        }
-
-        .pushBoxLeft{
-            width: 75%;
-            left: 30%;
-            -webkit-transform: translate(30%, 0%);
-            -ms-transform: translate(30%, 0%);
-            transform: translate(30%, 0%);
-        }
-
-        .DivSpace{
-            margin-top: 6%;
-        }
-
-        .centerBox{
-            margin: 0;
-            position: relative;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            display: inline-block;
-        }
-
-    </style>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Johan Hallberg Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/053c14aac5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div>
-    <div class="box mainBoxColor">
-        
-        <div>
-            <div style="margin-left: 1085px; margin-top: 250px;" class="half-circle"></div>
-            <div style="margin-left: 1065px; margin-top: 270px;" class="quater-circle"></div>
-            <div style="margin-left: 1495px; margin-top: 50px;" class="imageBox"></div>
-            <img src="Images/IMG_0655.JPG" width="240" height="240" class="image1 rotate270">
-            <div style="float:right; width: 50px; height: 500px;"></div>
-            <Header>
-                <h2 style="LINE-HEIGHT:10px;">Hello!</h2>
-                <h3 style="LINE-HEIGHT:5px;">I am Johan Hallberg, I am a programmer.</h3>
-                <p style="color:gray;">This is my portfolio, you can see some of the projects I have worked on on my free time and what I have been educated in. My strongest skills are in programming which I enjoy a lot. My best language is C# which I consider myself pretty proficient at, but I'm not clueless with C++ or Java either, and I technically have a little experience with Assembly. I also know how to use Git and Unity well. Generally I enjoy working on all kinds of things projects and I don't think that I shy away from trying and learning new things. I might have some other projects I have worked on which isn't shown here if you go to my <a href="https://github.com/Scaleo96?tab=repositories">github</a>.</p>
-            </Header>
-        </div>
-        <div class="row">
-            <div class="colum">
-                <div class="container">
-                    <img src="Images/Hang In There.JPG" alt="Projects.JPG" class="image2">
-                    <div class="overlay">
-                        <div id="projectButton" class="menuButton"></div>
-                        <div class="textCenter"> Projects</div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="colum">
-                <div class="container">
-                    <img src="Images/Skovde.jpg" alt="Education.JPG" class="image2">
-                    <div class="overlay">
-                        <div id="educationButton" class="menuButton"></div>
-                        <div class="textCenter"> Education</div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id = "myProjects" class="InfoDiv">
-            
-            <div id="Extraction">                
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                        <img src="Images/ExCover.png" alt="ExCove.png" style="vertical-align: middle;" class="image3">
-                        <h2 style="padding-left: 38%; margin-top: 1.2%;" class="textLeft"><a href="https://scaleo.itch.io/extraction">Extraction</a></h2>
-                        <p style="padding-top: 1%; padding-left: 38%; vertical-align: middle;" class="textLeft">Extraction was a game made for the Weekly Game Jam #150, The theme of that week was "You are the enemy". Extraction plays like an RTS game for the first half of the game, the player has to gather five different items and carry them back to the starting point. After that the perspective shifts. The player now controls one character in a top-down shooter perspective. The movements and actions of when the player controlled in RTS style now repeats and the player has to stop their previous self from even getting one item back.</p>                        
-                    </div>
-                </div>
-                <div class="projectLine"></div>
-            </div>
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+							<li class="nav-item submenu dropdown">
+								<a class="nav-link" href="#">Portfolio</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+									<li class="nav-item"><a class="nav-link" href="portfolio-details-1.html">Hang In There</a>
+										<li class="nav-item"><a class="nav-link" href="portfolio-details-2.html">Neat</a>
+											<li class="nav-item"><a class="nav-link" href="portfolio-details-3.html">Extraction</a>
+												<li class="nav-item"><a class="nav-link" href="portfolio-details-4.html">Re:Surge</a>
+													<li class="nav-item"><a class="nav-link" href="portfolio-details-5.html">Vestige Bound</a>
+														<li class="nav-item"><a class="nav-link" href="portfolio-details-6.html">Thesis Project</a>
+															<li class="nav-item"><a class="nav-link" href="portfolio-details-8.html">Uppfinnaren</a>
+																<li class="nav-item"><a class="nav-link" href="portfolio-details-7.html">Current Project</a>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
 
-            <div id="Hang In There" class="DivSpace">                
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                        <img src="Images/Hang_In_There.gif" alt="Hang In There.gif" style="vertical-align: middle;" class="image3">
-                        <h2 style="padding-left: 40%; margin-top: 3.5%;" class="textLeft"><a href="https://scaleo.itch.io/hang-in-there">Hang In There</a></h2>
-                        <p style="padding-top: 1%; padding-left: 40%; vertical-align: middle;" class="textLeft">Hang In There is a combination of a tower defence game and a third person shooter set in space. The player has to traverse the environment entirely using rope physics, swinging from one area to the other. The purpose of this project was largely to finish a fairly large game entirely on my own. And also just to pass the time.</p>                        
-                    </div>
-                </div>
-                <div class="projectLine"></div>
-            </div>
+	<!--================Home Banner Area =================-->
+	<section class="banner-area owl-carousel" id="home">
+		<div class="single_slide_banner slide_bg1">
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center">
+					<div class="banner-content col-lg-12 justify-content-center">
+						<h1>Johan Hallberg</h1>
+						<h3>Personal portfolio</h3>
+						<a href="contact.html" class="primary-btn">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="single_slide_banner slide_bg2">
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center">
+					<div class="banner-content col-lg-12 justify-content-center">
+						<h1>Steve Henriques</h1>
+						<h3>Personal portfolio Website</h3>
+						<a href="#" class="primary-btn">Hire Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single_slide_banner slide_bg3">
+			<div class="container">
+				<div class="row fullscreen justify-content-endd-flex align-items-center">
+					<div class="banner-content col-lg-12 justify-content-center">
+						<h1>Steve Henriques</h1>
+						<h3>Personal portfolio Website</h3>
+						<a href="#" class="primary-btn">Hire Me</a>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</section>
+	<!--================End Home Banner Area =================-->
 
-            <div id="Vestige Bound" class="DivSpace">                
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                        <img src="Images/VestigeBound.gif" alt="VestigeBound.gif" style="vertical-align: middle;" class="image3">
-                        <h2 style="padding-left: 40%; margin-top: -1.0%;" class="textLeft">Vestige Bound</h2>
-                        <p style="padding-top: 1%; padding-left: 40%; vertical-align: middle;" class="textLeft">Vestige Bound was a project I worked on along with another programmer for almost a year. It was supposed to be a procedural narrative RPG. The player controlled a caravan that traveled in a hex-grid world, the player had to eat, drink manage cold and fight to survive. Vestige Bound was our dream game and we worked on it pretty zealously, even though it was pretty clear from early on that the scope was too large and it was only growing. It was so large that we were only able to test the core gameplay loop after that year of development and then found out that it simply wasn't fun to play. The project was scrapped and now it stands as a lesson in testing projects regularly.</p>                        
-                    </div>
-                </div>
-                <div class="projectLine"></div>
-            </div>
+	<!--================ Start Portfolio Area =================-->
+	<section class="section_gap portfolio_area" id="work">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
+					<div class="main-title">
+						<h1>Projects</h1>
+						<p>Here are some of the projects I have worked on. This isn't everything, but it's what you can find online or projects that I find of particular intrest. I have coded on all these projects, but not all would I consider games.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="projects_fillter">
+						<ul class="filter list">
+							<li class="active" data-filter="*">All Categories</li>
+							<li data-filter=".brand">Games</li>
+							<li data-filter=".work">Code</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="projects_inner row grid">
+				<div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
+				<div class="col-lg-6 col-sm-6 col-sm-12 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work1.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-1.html">
+								<h4>Hang In There</h4>
+							</a>
+							<p>Solo</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-sm-12 work grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work2.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-2.html">
+								<h4>NEAT</h4>
+							</a>
+							<p>Pair</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work3.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-3.html">
+								<h4>Extraction</h4>
+							</a>
+							<p>Solo</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work5.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-5.html">
+								<h4>Vestige Bound</h4>
+							</a>
+							<p>Pair</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work4.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-4.html">
+								<h4>Re:Surge</h4>
+							</a>
+							<p>Thunderpunch Entertainment</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work8.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-8.html">
+								<h4>Uppfinnaren</h4>
+							</a>
+							<p>Silvertejp Entertainment</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 work grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work6.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-6.html">
+								<h4>Thesis Project</h4>
+							</a>
+							<p>Pair</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 brand grid-item">
+					<div class="projects_item">
+						<img class="img-fluid w-100" src="img/works/work7.jpg" alt="">
+						<div class="projects_text">
+							<a href="portfolio-details-7.html">
+								<h4>Current Project</h4>
+							</a>
+							<p>Solo</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Portfolio Area =================-->
 
-            <div id="Uppfinnaren" class="DivSpace">
-                <div class="projectLine"></div>
-                    <div style="height: 400px;;">
-                        <div class="centerBox">
-                        <img src="Images/Uppfinnaren.gif" alt="Uppfinnaren.gif" class="image3">
-                        <h2 style="padding-left: 35%; margin-top: 4.5%;" class="textLeft "><a href="https://kroax.itch.io/uppfinnaren">Uppfinnaren</a></h2>
-                        <h3 style="padding-left: 35%;" class="textLeft ">Silvertejp Entertainment</h3>
-                        <p style="padding-top: 1%; padding-left: 35%;" class="textLeft ">A 2D point and click puzzle game. The player could control three different characters who could all do different things. The player had to switch between them to solve the puzzles and clear the game. On this project, I worked primarily on the puzzles and dialogue system, but also on other areas when I could.</p>
-                        </div>
-                    </div>
-                <div class="projectLine"></div>
-            </div>
+	<!--================ Start About Area =================-->
+	<section class="about-area section_gap gray-bg">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-5 about-left">
+					<img class="img-fluid" style="border-radius: 10%;" src="img/about-img.png" alt="">
+				</div>
+				<div class="col-lg-6 col-md-12 about-right">
+					<div class="main-title text-left">
+						<h1>about myself</h1>
+					</div>
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<p>
+							Hello!
+							I am Johan Hallberg, I am a programmer.
+						</p>
+						<p>
+							This is my portfolio, you can see some of the projects I have worked on on my free time and what I have been educated in. My strongest skills are in programming which I enjoy a lot. My best language is C# which I consider myself very proficient at, but I'm not clueless with C++ or Java either, and I technically have a little experience with Assembly. I also know how to use Git and Unity very well. Generally I enjoy working on all kinds of things projects and I don't think that I shy away from trying and learning new things. I might have some other projects I have worked on which isn't shown here if you go to my github.
+						</p>
+					</div>
+					<a href="contact.html" class="primary-btn">Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Area =================-->
 
-            <div id="Re:Surge" class="DivSpace" >
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                <div class="centerBox">
-                    <img src="Images/ReSurge.gif" alt="ReSurge.gif" class="image3">
-                    <h2 style="padding-left: 40%; margin-top: 1%;" class="textLeft ">Re:Surge</h2>
-                    <h3 style="padding-left: 40%;" class="textLeft "> <a href="https://www.thunderpunchentertainment.com/">Thunderpunch Entertainment</a></h3>
-                    <p style="padding-left: 40%; padding-top: 1%;" class="textLeft ">Re:surge is a first person arena shooter focusing on fast and constant action inspired by games like Quake and Doom. The game is multiplayer only. Like Quake, there is no mechanical difference between characters that the player can choose and players need to learn and look around the map to find good weapons to defeat each other with. In this project I worked on almost everything: weapons, multiplayer, movement and game modes.</p>
-            </div>
-        </div>
-    <div class="projectLine"></div>
-            </div>
-            <div id="NEAT" class="DivSpace">
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                <img src="Images/NEAT.gif" alt="NEAT.gif" class="image3">
-                <h2 style="padding-left: 42%; margin-top: 2.5%;" class="textLeft ">A NEAT Project</h2>
-                <p style="padding-left: 42%; padding-top: 1%;" class="textLeft ">This is a project which implemented NeuroEvolution of Augmenting Topologies (NEAT) with the goal to learn how to play Super Mario. Input to the neural network was accomplished by a grid that 'visualized' the screen, each box in the grid corresponded to an input node. When an entity intersected with a box in the grid that entities value was sent to the corresponding input, giving the agent some rudimentary vision and hopefully making it better for more general use.</p>
-            </div>
-        </div>
-    <div class="projectLine"></div>
-            </div>
-
-            <div id="Thesis" class="DivSpace">
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                <img src="Images/Thesis.gif" alt="Thesis.gif" class="image3">
-                <h2 style="padding-left: 31%;" class="textLeft ">Thesis</h2>
-                <h3 style="padding-left: 31%;" class="textLeft ">Recreate human behaviour with artificial intelligence in a 2D top down wave shooter game</h3>
-                <p style="padding-left: 31%; padding-top: 1%;" class="textLeft ">Two different AI were made to play a game with as humanlike behaviour as possible. One AI made with Behaviour trees and one with a LSTM neural network trained with reinforcement learning. When they were ready testers played with both AI one after another, except that the testers were told that one of the agents was an AI and one was a human. The tester was not told which were which and they had to decide which they thought were the AI. The goal of this was to find out which of the two used techniques were best at imitating human player behaviour.</p>
-                 </div>
-                 </div>
-                <div class="projectLine"></div>
-            </div>
-        </div>
-
-        <div id = "myEducation" class="InfoDiv" style="display: none; margin-top: -3.25%;">
-            <div id="Skovde" class="DivSpace">
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                        <img src="Images/HIS_SE_LOGO_WEB.png" alt="HIS_LOGO.PNG" class="image3">
-                        <h2 style="padding-left: 25%; margin-top: 3%;" class="textLeft ">University of Skövde</h2>
-                        <h3 style="padding-left: 25%;" class="textLeft ">Game Development - Programming</h3>
-                        <p style="padding-left: 25%; padding-top: 1%;" class="textLeft ">The programme taught programming, mostly with C# but also C++, Java and Assembly. It focused on game programming but mostly taught general programming. Courses included: Data Communications, Algorithms och data structures, Parallel processes, Operating Systems, Machine-related programming, Programming Methodology, Linear Algebra and Discrete Mathematics.</p>
-                    </div>
-                </div>
-                <div class="projectLine"></div>
-            </div>
-
-            <div id="Trollhattan" class="DivSpace">
-                <div class="projectLine"></div>
-                <div style="height: 400px;">
-                    <div class="centerBox">
-                        <img src="Images/lbs.jpg" alt="lbsLogo.JPG" class="image3">
-                        <h2 style="padding-left: 25%; margin-top: 4.5%;" class="textLeft ">Ljud och Bild Skolan</h2>
-                        <h3 style="padding-left: 25%;" class="textLeft ">Game Development</h3>
-                        <p style="padding-left: 25%; padding-top: 1%;" class="textLeft ">This programme focused on programming for games programming but it also included design and aesthetics with focus on game development. It had courses that taught 3D modeling and how to use programs such as Photoshop, Maya and Mudbox.</p>
-                    </div>
-                </div>
-                <div class="projectLine"></div>
-            </div>
-        </div>
-
-        <div style="height: 100px;"></div>
+	<!--================ Start Testimonial Area =================-->
+	<!--
+	<div class="section_gap testimonial_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 text-left">
+					<div class="active_testimonial owl-carousel" data-slider-id="1">
 
 
-        <footer>
-            <div style="float:left">
-                <h2>Links</h2>
-                &nbsp;&nbsp;
-                <p><a style="color: rgb(190, 190, 190);" href="https://twitter.com/_Scaleo/">Twitter</a></p>
-                <hr style="width: 400px; text-align: left; margin-left: 0;">
-                <p><a style="color: rgb(190, 190, 190);" href="https://www.linkedin.com/in/johan-hallberg-31257a19a/">Linkedin</a></p>
-                <hr style="width: 400px; text-align: left; margin-left: 0;">
-                <p><a style="color: rgb(190, 190, 190);" href="https://scaleo.itch.io/">Itch.io</a></p>
-                <hr style="width: 400px; text-align: left; margin-left: 0;">
-                <p><a style="color: rgb(190, 190, 190);" href="https://github.com/Scaleo96">Github</a></p>
-            </div>
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
 
-            <div style="float:left; padding-left: 100px;">
-                <h2>Contact information</h2>
-                &nbsp;&nbsp;
-                <p style="color: rgb(190, 190, 190);">e-mail: johanhallberg96@gmail.com</p>
-                <hr style="width: 400px; text-align: right; margin-right: 0;">
-                <p style="color: rgb(190, 190, 190)">Phone: 070 820 15 60</p>
-            </div>
-            &nbsp;&nbsp;
-        </footer>
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
 
-    </div>   
-</div>
-    <script>
-        
-        document.getElementById("projectButton").onclick = function() {fade(document.getElementById("myProjects"), document.getElementById("myEducation"))};
-        document.getElementById("educationButton").onclick = function() {fade(document.getElementById("myEducation"), document.getElementById("myProjects"))};
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
 
-        function fade(element1, element2) {
-            element2.style.display = 'none';
-            var op = 0;  // initial opacity
-            var timer = setInterval(function () {
-            if (op >= 0.99){
-                    clearInterval(timer);
-                    element1.style.display = 'block';
-            }
-            element1.style.opacity = op;
-            element1.style.filter = 'alpha(opacity=' + op * 100 + ")";
-            element1.style.display = 'block';
-            op += op + 0.05;
-            }, 50);
-        }
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<div class="testimonial_logos">
+						<div class="top_logos">
+							<img src="img/brands/logo1.png" alt="">
+							<img src="img/brands/logo2.png" alt="">
+						</div>
+						<div class="mid_logo">
+							<img src="img/brands/logo3.png" alt="">
+						</div>
+						<div class="bottom_logos jus">
+							<img src="img/brands/logo4.png" alt="">
+							<img src="img/brands/logo5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!--================ End Testimonial Area =================-->
 
-    </script>
+	<!--================ Start Newsletter Area =================-->
+	<!--
+	<section class="section_gap newsletter-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
+					<div class="main-title">
+						<h1>Join Our Newsletter</h1>
+						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may
+							see some for as low as $.17 each.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row newsletter_form justify-content-center">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="d-flex flex-row" id="mc_embed_signup">
+						<form class="w-100" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+						 method="get">
+							<div class="navbar-form">
+								<div class="input-group add-on">
+									<input class="form-control" name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''"
+									 onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<div style="position: absolute; left: -5000px;">
+										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+									</div>
+									<div class="input-group-btn">
+										<button class="genric-btn text-uppercase">
+											Subscribe
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="info mt-20"></div>
+						</form>
 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	<!--================ End Newsletter Area =================-->
+
+	<!--================ Start Footer Area =================-->
+	<footer class="footer_area section_gap">
+		<div class="container">
+			<div class="row footer_inner justify-content-center">
+				<div class="col-lg-6 text-center">
+					<aside class="f_widget social_widget">
+						<div class="f_logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<div class="f_title">
+							<h4>Follow Me</h4>
+						</div>
+						<ul class="list">
+							<li><a href="https://github.com/Scaleo96"><i class="fa fa-github"></i></a></li>
+							<li><a href="http://twitter.com/_Scaleo"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://scaleo.itch.io/"><i class="fab fa-itch-io"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/johan-hallberg-31257a19a/"><i class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</aside>
+					<div class="copyright">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
 </body>
+
 </html>
